@@ -94,26 +94,6 @@
 			}
 
 	// Main Sections: Two.
-
-		// Lightbox gallery.
-			$window.on('load', function() {
-
-				$('.project-gallery').each(function() {
-					$(this).poptrox({
-						caption: function($a) { return $a.closest('.work-item').find('h3').text(); },
-						overlayColor: '#2c2c2c',
-						overlayOpacity: 0.85,
-						popupCloserText: '',
-						popupLoaderText: '',
-						selector: 'a.image, a.thumb',
-						usePopupCaption: true,
-						usePopupDefaultStyling: false,
-						usePopupEasyClose: false,
-						usePopupNav: true,
-						windowMargin: (breakpoints.active('<=small') ? 0 : 50)
-					});
-				});
-
-			});
+		// Custom Lightbox — logic moved to assets/js/lightbox.js
 
 })(jQuery);

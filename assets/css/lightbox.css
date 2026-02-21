@@ -1,0 +1,155 @@
+/* Lightbox overlay */
+#lx-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+
+#lx-overlay.active {
+    display: flex;
+}
+
+/* Main panel */
+#lx-panel {
+    display: flex;
+    width: 88vw;
+    max-width: 1100px;
+    max-height: 85vh;
+    background: #1c1c1c;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Image side */
+#lx-image-side {
+    position: relative;
+    flex: 2;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+#lx-img {
+    max-width: 100%;
+    max-height: 85vh;
+    display: block;
+    object-fit: contain;
+}
+
+#lx-prev,
+#lx-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: none;
+    font-size: 1.4em;
+    padding: 0.6em 0.8em;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background 0.2s;
+}
+
+#lx-prev:hover,
+#lx-next:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#lx-prev {
+    left: 0.5em;
+}
+
+#lx-next {
+    right: 0.5em;
+}
+
+/* Info side */
+#lx-info-side {
+    flex: 1;
+    padding: 2em 1.8em;
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-y: auto;
+    min-width: 240px;
+    max-width: 320px;
+    border-left: 1px solid #333;
+}
+
+#lx-close {
+    position: absolute;
+    top: 0.8em;
+    right: 0.8em;
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0.2em 0.4em;
+}
+
+#lx-close:hover {
+    color: #fff;
+}
+
+#lx-title {
+    color: #fff;
+    font-size: 1.1em;
+    margin: 0.5em 0 0.8em 0;
+}
+
+#lx-desc {
+    font-size: 0.88em;
+    line-height: 1.7;
+    color: #aaa;
+    margin-bottom: 1.2em;
+}
+
+#lx-tags {
+    margin-bottom: 1.2em;
+}
+
+#lx-tags span {
+    display: inline-block;
+    background: #2e2e2e;
+    color: #aaa;
+    font-size: 0.75em;
+    padding: 0.2em 0.6em;
+    border-radius: 3px;
+    margin: 0.2em 0.2em 0 0;
+}
+
+#lx-links a {
+    display: inline-block;
+    margin-right: 0.8em;
+    color: #aaa;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+
+#lx-links a:hover {
+    color: #fff;
+}
+
+#lx-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.55);
+    color: #ddd;
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+    text-align: center;
+}
