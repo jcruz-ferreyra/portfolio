@@ -79,4 +79,31 @@ $(document).ready(function () {
 		if (e.key === 'Escape') $('#lx-overlay').removeClass('active');
 	});
 
+	// Swipe to navigate on mobile
+	var touchStartX = 0;
+
+	$('#lx-image-side').on('touchstart', function (e) {
+		touchStartX = e.originalEvent.touches[0].clientX;
+	});
+
+	$('#lx-image-side').on('touchend', function (e) {
+		var diff = touchStartX - e.originalEvent.changedTouches[0].clientX;
+		if (Math.abs(diff) > 40) {  // 40px threshold to avoid accidental swipes
+			if (diff > 0) {
+				current = (current + 1) % images.length;  // swipe left = next
+			} else {
+				current = (current - 1 + images.length) % images.length;  // swipe right = prev
+			}
+			showImage(current);
+		}
+	});
+
+	// Fix mobile viewport height on browser chrome hide/show
+	function setMobileHeight() {
+		var vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty('--vh', vh + 'px');
+	}
+	setMobileHeight();
+	$(window).on('resize', setMobileHeight);
+
 });
