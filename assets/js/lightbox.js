@@ -5,6 +5,7 @@ $(document).ready(function () {
 	function showImage(i) {
 		$('#lx-img').attr('src', images[i]);
 		$('#lx-caption').text(captions[i] || '');
+		$('#lx-counter').text((i + 1) + ' / ' + images.length);
 		$('#lx-img').css('cursor', 'zoom-in');
 		$('#lx-img').off('click').on('click', function () {
 			window.open(images[i], '_blank');
@@ -106,4 +107,29 @@ $(document).ready(function () {
 	setMobileHeight();
 	$(window).on('resize', setMobileHeight);
 
+
+	// Education popup
+	$('.edu-item').on('click', function () {
+		var id = $(this).data('id');
+		var content = $('#' + id + '-data').html();
+		$('#edu-popup-panel').html(content + '<button id="edu-popup-close">&#10005;</button>');
+		$('#edu-popup').addClass('active');
+
+		// Close: X button (dynamically added)
+		$(document).on('click', '#edu-popup-close', function () {
+			$('#edu-popup').removeClass('active');
+		});
+	});
+
+	// Close: click outside panel
+	$('#edu-popup').on('click', function (e) {
+		if ($(e.target).is('#edu-popup')) {
+			$('#edu-popup').removeClass('active');
+		}
+	});
+
+	// Close: Escape key (add to existing keydown handler or add new one)
+	$(document).on('keydown', function (e) {
+		if (e.key === 'Escape') $('#edu-popup').removeClass('active');
+	});
 });
