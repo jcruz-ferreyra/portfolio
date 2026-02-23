@@ -250,12 +250,12 @@
 
 .edu-degree {
     font-weight: 600;
-    font-size: 0.95em;
+    font-size: clamp(14px, 1.05em, 18px);
     color: #333;
 }
 
 .edu-institution a {
-    font-size: 0.85em;
+    font-size: clamp(13px, 0.95em, 16px);
     color: #888;
     text-decoration: none;
     border-bottom: none;
@@ -274,12 +274,12 @@
 }
 
 .edu-date {
-    font-size: 0.85em;
+    font-size: clamp(12px, 0.85em, 15px);
     color: #888;
 }
 
 .edu-location {
-    font-size: 0.8em;
+    font-size: clamp(11px, 0.8em, 14px);
     color: #aaa;
 }
 
@@ -287,8 +287,10 @@
 #edu-popup {
     display: none;
     position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.85);
     z-index: 9999;
     align-items: center;
@@ -313,9 +315,18 @@
     scrollbar-color: #444 #1c1c1c;
 }
 
-#edu-popup-panel::-webkit-scrollbar { width: 5px; }
-#edu-popup-panel::-webkit-scrollbar-track { background: #1c1c1c; }
-#edu-popup-panel::-webkit-scrollbar-thumb { background: #444; border-radius: 3px; }
+#edu-popup-panel::-webkit-scrollbar {
+    width: 5px;
+}
+
+#edu-popup-panel::-webkit-scrollbar-track {
+    background: #1c1c1c;
+}
+
+#edu-popup-panel::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 3px;
+}
 
 #edu-popup-panel h3 {
     color: #fff;
@@ -354,7 +365,8 @@
 
 #edu-popup-close {
     position: fixed;
-    top: 1em; right: 1em;
+    top: 1em;
+    right: 1em;
     background: rgba(0, 0, 0, 0.5);
     border: none;
     color: #ccc;
@@ -365,7 +377,24 @@
     z-index: 10000;
 }
 
-#edu-popup-close:hover { color: #fff; }
+#edu-popup-close:hover {
+    color: #fff;
+}
+
+/* Header and intro font size fixes */
+#header h1 {
+    font-size: clamp(14px, 1.25em, 22px);
+    line-height: 1.6;
+}
+
+#one header.major h2 {
+    font-size: clamp(16px, 1.5em, 28px);
+}
+
+#one p {
+    font-size: clamp(13px, 0.95em, 17px);
+    line-height: 1.7;
+}
 
 /* Mobile */
 @media (max-width: 736px) {
