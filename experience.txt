@@ -1,0 +1,124 @@
+		<!-- EDUCATION -->
+		<section id="education">
+			<h2>Education</h2>
+			<div class="edu-list">
+
+				<div class="edu-item" data-id="edu1">
+					<div class="edu-main">
+						<div class="edu-left">
+							<span class="edu-institution"><a href="https://www.northeastern.edu"
+									target="_blank">Northeastern University</a></span>
+							<span class="edu-degree">Master of Science, Urban Informatics</span>
+						</div>
+						<div class="edu-right">
+							<span class="edu-date">Expected May 2026</span>
+							<span class="edu-location">Boston, MA</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="edu-item" data-id="edu2">
+					<div class="edu-main">
+						<div class="edu-left">
+							<span class="edu-institution"><a href="https://www.uba.ar" target="_blank">University of
+									Buenos Aires</a></span>
+							<span class="edu-degree">Graduate Specialization, Artificial Intelligence</span>
+						</div>
+						<div class="edu-right">
+							<span class="edu-date">October 2025</span>
+							<span class="edu-location">Buenos Aires, Argentina</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="edu-item" data-id="edu3">
+					<div class="edu-main">
+						<div class="edu-left">
+							<span class="edu-institution"><a href="https://www.unr.edu.ar" target="_blank">National
+									University of Rosario</a></span>
+							<span class="edu-degree">Bachelor in Architecture</span>
+						</div>
+						<div class="edu-right">
+							<span class="edu-date">May 2021</span>
+							<span class="edu-location">Rosario, Argentina</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- EDUCATION popup data (hidden) -->
+		<div id="edu1-data" style="display:none">
+			<h3>Master of Science, Urban Informatics</h3>
+			<p class="edu-popup-meta">Northeastern University · Boston, MA <br> Expected May 2026</p>
+			<p>The MS in Urban Informatics at Northeastern is a two-year interdisciplinary program applying geospatial and computational methods to real-world urban challenges. Its flexible structure draws from engineering, planning, and data science, with a strong emphasis on project development and visualization. My coursework follows a concentration in Transportation.</p>
+			<h4>Courses</h4>
+			<ul>
+				<li>OR 6205: Deterministic Operations Research</li>
+				<li>CIVE 7100: Time Series and Geospatial Data Science</li>
+				<li>INSH 6101: Agent-Based Modeling</li>
+				<li>IE 7374: Generative AI</li>
+				<li>PPUA 6263: GIS for Urban and Regional Planning</li>
+				<li>INSH 5302: Information Design and Visual Analytics</li>
+				<li>PPUA 5262: Big Data for Cities</li>
+				<li>INSH 5301: Computational Statistics</li>
+			</ul>
+			<div id="lx-tags">
+				<span>Python</span>
+				<span>GIS</span>
+				<span>SQL</span>
+				<span>Streamlit</span>
+			</div>
+			<div class="edu-popup-links">
+				<a href="https://catalog.northeastern.edu/graduate/social-sciences-humanities/public-policy-urban-affairs/urban-informatics-ms/" target="_blank" class="icon solid fa-globe" title="Program Website"><span class="label">Program Website</span></a>
+			</div>
+		</div>
+
+		<div id="edu2-data" style="display:none">
+			<h3>Graduate Specialization, Artificial Intelligence</h3>
+			<p class="edu-popup-meta">University of Buenos Aires · Buenos Aires, Argentina <br> October 2025</p>
+			<p>The Graduate Specialization in Artificial Intelligence at UBA's School of Engineering is a rigorous one-year program focused on technical and methodological AI skills. Delivered synchronously online, it covers the full stack from mathematical foundations to applied deep learning and MLOps. The specialization serves as the intermediate degree toward a Master's in Artificial Intelligence, and concludes with a 600-hour capstone project.</p>
+			<h4>Courses</h4>
+			<ul>
+				<li>Capstone</li>
+				<li>Computer Vision I and II</li>
+				<li>MLOps</li>
+				<li>Natural Language Processing I</li>
+				<li>Deep Learning</li>
+				<li>Time Series Analysis and Forecasting</li>
+				<li>Machine Learning</li>
+				<li>Probability and Statistics</li>
+				<li>Mathematics for Artificial Intelligence</li>
+			</ul>
+			<div id="lx-tags">
+				<span>Python</span>
+				<span>GIS</span>
+				<span>SQL</span>
+				<span>Streamlit</span>
+			</div>
+			<div class="edu-popup-links">
+				<a href="https://lse-posgrados.fi.uba.ar/posgrados/especializaciones/ceia" target="_blank" class="icon solid fa-globe" title="Program Website"><span class="label">Program Website</span></a>
+			</div>
+		</div>
+
+		<div id="edu3-data" style="display:none">
+			<h3>Bachelor in Architecture</h3>
+			<p class="edu-popup-meta">National University of Rosario · Rosario, Argentina · May 2021</p>
+			<p>My training in architecture at UNR built a foundation in spatial thinking, design communication, and the relationship between people and the built environment — perspectives I continue to draw on when working with urban data. The program's urban planning sequence introduced me to city analysis, intervention design, and the historical forces that shape urban form, which ultimately led me toward urban informatics as a field.</p>
+			<h4>Courses</h4>
+			<ul>
+				<li>Urban Planning I, II, III</li>
+				<li>Architectural Project I, II, III</li>
+				<li>Graphic Epression I, II</li>
+			</ul>
+			<div id="lx-tags">
+				<span>Python</span>
+				<span>GIS</span>
+				<span>SQL</span>
+				<span>Streamlit</span>
+			</div>
+			<div class="edu-popup-links">
+				<a href="https://fapyd.unr.edu.ar/" target="_blank" class="icon solid fa-globe" title="Program Website"><span class="label">Program Website</span></a>
+			</div>
+		</div>

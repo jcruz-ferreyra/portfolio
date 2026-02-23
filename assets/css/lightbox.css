@@ -1,3 +1,38 @@
+.cv-button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.4em 1.2em;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ccc !important;
+    font-size: 0.85em;
+    border-radius: 3px;
+    border: none !important;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.cv-button:hover {
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff !important;
+}
+
+.expand-btn {
+    background: none;
+    border: none !important;
+    color: #888;
+    font-size: 0.85em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.2s;
+    padding: 0;
+}
+
+.expand-btn:hover {
+    color: #494949;
+    border: none !important;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
 /* Overlay */
 #lx-overlay {
     display: none;
@@ -227,7 +262,7 @@
 
 .edu-item {
     border-bottom: none;
-    padding: 0.8em 0.5em;
+    padding: 0.5em 0.5em;
     cursor: pointer;
     transition: background 0.15s;
     border-radius: 3px;
@@ -240,27 +275,21 @@
 
 .edu-main {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1em;
+    align-items: center;
+    gap: 5;
 }
 
 .edu-left {
     display: flex;
     flex-direction: column;
-    gap: 0.2em;
+    gap: 0.01em;
+    flex: 1;
 }
 
-.edu-institution a {
+.edu-institution {
     font-size: clamp(14px, 1.05em, 18px);
     font-weight: 600;
-    color: #333;
-    text-decoration: none;
-    border-bottom: none;
-}
-
-.edu-institution a:hover {
-    color: #555;
+    color: #333 !important;
 }
 
 .edu-degree {
@@ -273,17 +302,17 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 0.2em;
+    gap: 0.01em;
     flex-shrink: 0;
 }
 
 .edu-date {
-    font-size: clamp(12px, 0.85em, 15px);
-    color: #888;
+    font-size: clamp(11px, 0.8em, 14px);
+    color: #aaa;
 }
 
 .edu-location {
-    font-size: clamp(11px, 0.8em, 14px);
+    font-size: clamp(12px, 0.85em, 15px);
     color: #aaa;
 }
 
@@ -398,7 +427,9 @@
     transition: color 0.2s;
 }
 
-.edu-popup-links a:hover { color: #fff; }
+.edu-popup-links a:hover {
+    color: #fff;
+}
 
 /* Header and intro font size fixes */
 #header h1 {
@@ -429,6 +460,29 @@
 #main>section {
     margin: 2em 0 0 0;
     padding: 2em 0 0 0;
+}
+
+/* Entry logos (education + experience) */
+.entry-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 0.8em;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.entry-logo-link {
+    text-decoration: none;
+    border-bottom: none;
+    display: block;
+    transition: opacity 0.2s;
+}
+
+.entry-logo-link:hover {
+    border-bottom: none;
+    opacity: 0.75;
 }
 
 /* Mobile */

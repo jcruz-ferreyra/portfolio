@@ -109,13 +109,16 @@ $(document).ready(function () {
 
 
 	// Education popup
-	$('.edu-item').on('click', function () {
+	$('.edu-item').on('click', function (e) {
+		if ($(e.target).closest('.entry-logo-link').length) {
+			e.stopPropagation();
+			return;
+		}
 		var id = $(this).data('id');
 		var content = $('#' + id + '-data').html();
 		$('#edu-popup-panel').html(content + '<button id="edu-popup-close">&#10005;</button>');
 		$('#edu-popup').addClass('active');
 
-		// Close: X button (dynamically added)
 		$(document).on('click', '#edu-popup-close', function () {
 			$('#edu-popup').removeClass('active');
 		});
@@ -131,5 +134,18 @@ $(document).ready(function () {
 	// Close: Escape key (add to existing keydown handler or add new one)
 	$(document).on('keydown', function (e) {
 		if (e.key === 'Escape') $('#edu-popup').removeClass('active');
+	});
+
+	// Toggle extra projects
+	$('#toggle-projects').on('click', function (e) {
+		e.preventDefault();
+		var $extra = $('#extra-projects');
+		if ($extra.is(':visible')) {
+			$extra.slideUp(300);
+			$(this).text('Show More');
+		} else {
+			$extra.slideDown(300);
+			$(this).text('Show Less');
+		}
 	});
 });
