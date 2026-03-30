@@ -228,6 +228,14 @@
     margin-bottom: 1.2em;
 }
 
+#lx-desc p {
+    margin-bottom: 0.5em;
+}
+
+#lx-desc p:last-child {
+    margin-bottom: 0;
+}
+
 #lx-tags {
     margin-bottom: 1.2em;
 }

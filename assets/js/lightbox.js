@@ -31,7 +31,13 @@ $(document).ready(function () {
 
 		// Populate info panel from article
 		$('#lx-title').text($article.find('h3').text());
-		$('#lx-desc').text($article.find('.lx-long-desc').text());
+
+		// Build description as separate paragraphs
+		var descHtml = '';
+		$article.find('.lx-long-desc').each(function () {
+			descHtml += '<p>' + $(this).html() + '</p>';
+		});
+		$('#lx-desc').html(descHtml);
 
 		// Tags
 		var tagsHtml = '';
