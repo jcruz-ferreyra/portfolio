@@ -208,7 +208,7 @@
 
 				<div class="edu-item" data-id="exp2">
 					<div class="edu-main">
-						<a href="#" target="_blank" class="entry-logo-link">
+						<a href="https://emr.gov.ar/" target="_blank" class="entry-logo-link">
 							<img src="images/logos/emr.jpg" alt="Rosario Mobility Authority" class="entry-logo" />
 						</a>
 						<div class="edu-left">
@@ -303,17 +303,15 @@
 
 				<article class="col-4 col-12-xsmall work-item">
 					<div class="project-gallery">
-						<a href="images/fulls/project01/project01-01.jpg" class="image fit thumb"
-							data-caption="Real-time sensor dashboard overview">
-							<img src="images/thumbs/project01.jpg" alt="" />
+						<a href="images/fulls/bari/arcgis_map.jpg" class="image fit thumb"
+							data-caption="ArcGIS map with sensor locations across the Blue Hill Avenue corridor">
+							<img src="images/thumbs/bari.jpg" alt="" />
 						</a>
-						<a href="images/fulls/project01/project01-02.jpg" class="image fit thumb" style="display:none"
-							data-caption="ETL pipeline architecture">
-							<img src="images/thumbs/project01-01.jpg" alt="" />
+						<a href="images/fulls/bari/dashboard.jpg" class="image fit thumb" style="display:none"
+							data-caption="Interactive community dashboard showing real-time heat and noise readings">
 						</a>
-						<a href="images/fulls/project01/project01-03.jpg" class="image fit thumb" style="display:none"
-							data-caption="Geospatial data visualization">
-							<img src="images/thumbs/project01-01.jpg" alt="" />
+						<a href="images/fulls/bari/pipeline.jpg" class="image fit thumb" style="display:none"
+							data-caption="Cloud pipeline architecture for sensor data ingestion and storage">
 						</a>
 					</div>
 					<div
@@ -325,74 +323,103 @@
 										Site</span></a></li>
 						</ul>
 					</div>
-					<p>Short description here. One or two sentences max.</p>
-					<p class="lx-long-desc" style="display:none">This is the longer description that appears in the
-						lightbox panel. You can write as much as you want here — methodology, context, findings,
-						whatever you want the viewer to read when they open the project.</p>
+					<p>A cloud data pipeline supporting a community-led environmental justice initiative in Roxbury
+						and Dorchester, processing real-time heat, and noise readings from 50+ distributed
+						sensors across the Blue Hill Avenue corridor.</p>
+					<p class="lx-long-desc" style="display:none">Common SENSES is a community-led action research
+						project supporting environmental justice along Blue Hill Avenue, from Dudley Town Common to
+						Franklin Park. Led by the Dudley Street Neighborhood Initiative, Project RIGHT, BARI, and the
+						City of Boston's Office of Emerging Technology, the initiative deploys environmental sensors as
+						community infrastructure, making data openly available for neighborhood advocacy, policy
+						conversations, and co-designed solutions.</p>
+					<p class="lx-long-desc" style="display:none">As a Research Assistant at BARI, I designed and
+						deployed the end-to-end data pipeline supporting this network. The system ingests real-time
+						readings from 50+ sensors through a webhook-based architecture, processes and stores data in
+						Azure Blob Storage, and loads it into a normalized relational database. Researchers access the
+						data directly through the database, while community members can explore live and historical
+						readings through an interactive dashboard embedded in an ArcGIS map showing each sensor's
+						location across the corridor.</p>
+					<p class="lx-long-desc" style="display:none">The result is a system that translates raw
+						environmental data into an accessible public resource, enabling residents to track conditions
+						in their own neighborhood and engage in evidence-based advocacy around heat, and noise.</p>
 					<span class="lx-tag" style="display:none">Python</span>
 					<span class="lx-tag" style="display:none">Azure</span>
 					<span class="lx-tag" style="display:none">SQL</span>
+					<span class="lx-tag" style="display:none">ArcGIS</span>
 					<span class="lx-tag" style="display:none">Streamlit</span>
 				</article>
 
 				<article class="col-4 col-12-xsmall work-item">
 					<div class="project-gallery">
-						<a href="images/fulls/project02/map01.jpg" class="image fit thumb"
-							data-caption="Real-time sensor dashboard overview">
-							<img src="images/thumbs/project02.jpg" alt="" />
+						<a href="images/fulls/gis/map01.jpg" class="image fit thumb"
+							data-caption="Walking accessibility to existing Bluebikes stations at 200, 500, and 1000 meter thresholds">
+							<img src="images/thumbs/gis.jpg" alt="" />
 						</a>
-						<a href="images/fulls/project02/map02.jpg" class="image fit thumb" style="display:none"
-							data-caption="ETL pipeline architecture"></a>
-						<a href="images/fulls/project02/map03.jpg" class="image fit thumb" style="display:none"
-							data-caption="ETL pipeline architecture"></a>
-						<a href="images/fulls/project02/map04.jpg" class="image fit thumb" style="display:none"
-							data-caption="ETL pipeline architecture"></a>
-						<a href="images/fulls/project02/map05.jpg" class="image fit thumb" style="display:none"
-							data-caption="ETL pipeline architecture"></a>
-						<a href="images/fulls/project02/map06.jpg" class="image fit thumb" style="display:none"
-							data-caption="ETL pipeline architecture"></a>
-						<a href="images/fulls/project02/map07.jpg" class="image fit thumb" style="display:none"
-							data-caption="ETL pipeline architecture"></a>
+						<a href="images/fulls/gis/map02.jpg" class="image fit thumb" style="display:none"
+							data-caption="Preliminary candidate sites in areas more than 500 meters from the nearest station"></a>
+						<a href="images/fulls/gis/map03.jpg" class="image fit thumb" style="display:none"
+							data-caption="Manual refinement of candidate sites combining GIS analysis and satellite imagery review"></a>
+						<a href="images/fulls/gis/map04.jpg" class="image fit thumb" style="display:none"
+							data-caption="Sites filtered by population: 500 or more residents within a 200 meter buffer"></a>
+						<a href="images/fulls/gis/map05.jpg" class="image fit thumb" style="display:none"
+							data-caption="Sites filtered by infrastructure proximity: within 500 meters of an existing bike lane"></a>
+						<a href="images/fulls/gis/map06.jpg" class="image fit thumb" style="display:none"
+							data-caption="Sites filtered by existing demand: nearest station with 1,000 or more trips in 2024"></a>
+						<a href="images/fulls/gis/map07.jpg" class="image fit thumb" style="display:none"
+							data-caption="Three final proposed sites in Brighton, East Boston, and Roxbury meeting all criteria"></a>
 					</div>
 					<div
 						style="display:flex; align-items:center; justify-content:space-between; margin:0.5em 0 0.3em 0;">
-						<h3 style="margin:0;">Bluebikes Demand Forecasting and Rebalancing Optimization</h3>
+						<h3 style="margin:0;">Bluebikes Network Expansion: A GIS Siting Analysis</h3>
 						<ul class="icons" style="margin:0; font-size:0.8em;">
-							<li><a href="https://github.com/jcruz-ferreyra?tab=repositories"
-									class="icon brands fa-github" title="GitHub"><span class="label">GitHub</span></a>
+							<li><a href="reports/project_gis.html" class="icon solid fa-download"
+									title="Download Report"><span class="label">Report</span></a></li>
 							</li>
 						</ul>
 					</div>
-					<p>Short description here. One or two sentences max.</p>
-					<p class="lx-long-desc" style="display:none">This is the longer description that appears in the
-						lightbox panel. You can write as much as you want here — methodology, context, findings,
-						whatever you want the viewer to read when they open the project. This is the longer description
-						that appears in the
-						lightbox panel. You can write as much as you want here — methodology, context, findings,
-						whatever you want the viewer to read when they open the project. This is the longer description
-						that appears in the
-						lightbox panel. You can write as much as you want here — methodology, context, findings,
-						whatever you want the viewer to read when they open the project. This is the longer description
-						that appears in the
-						lightbox panel. You can write as much as you want here — methodology, context, findings,
-						whatever you want the viewer to read when they open the project.</p>
+					<p>A GIS analysis identifying underserved areas in Boston's Bluebikes network and recommending
+						three new station locations based on population density, bike infrastructure proximity,
+						and existing ridership demand.</p>
+					<p class="lx-long-desc" style="display:none">Boston has made meaningful investments in cycling
+						infrastructure in recent years, but gaps remain in the Bluebikes bike-share network. This
+						project uses open geospatial data to identify where new stations could most effectively
+						expand access, focusing on areas where service gaps overlap with residential density and
+						existing infrastructure.</p>
+					<p class="lx-long-desc" style="display:none">The analysis begins with a network-based walkability
+						assessment, mapping coverage at 200, 500, and 1,000 meter walking distances from each station
+						using actual street geometry rather than straight-line buffers. Areas beyond 500 meters from
+						any station are treated as underserved. Ten preliminary candidate sites are identified through
+						visual analysis of these coverage gaps overlaid with census block population data.</p>
+					<p class="lx-long-desc" style="display:none">Each candidate site is then evaluated against three
+						measurable criteria: a minimum of 500 residents within a 200 meter buffer, proximity to an
+						existing bike lane within 500 meters, and a nearest station with at least 1,000 trips recorded
+						in 2024. Sites are further refined through a qualitative review combining GIS data with
+						satellite imagery to assess terrain, street conditions, and local feasibility.</p>
+					<p class="lx-long-desc" style="display:none">Three final sites in Brighton, East Boston, and
+						Roxbury met all criteria, representing geographically diverse opportunities to extend the
+						network in areas with demonstrated demand and good infrastructure connectivity. All analysis
+						was conducted using publicly available data from Bluebikes, the City of Boston, the U.S.
+						Census, and BARI.</p>
+					<p class="lx-long-desc" style="display:none"><em>Developed as part of the GIS for Urban and
+							Regional Planning course at Northeastern University.</em></p>
 					<span class="lx-tag" style="display:none">Python</span>
-					<span class="lx-tag" style="display:none">Azure</span>
-					<span class="lx-tag" style="display:none">SQL</span>
-					<span class="lx-tag" style="display:none">Streamlit</span>
+					<span class="lx-tag" style="display:none">QGIS</span>
+					<span class="lx-tag" style="display:none">GeoPandas</span>
+					<span class="lx-tag" style="display:none">OSMnx</span>
 				</article>
 
 				<article class="col-4 col-12-xsmall work-item">
 					<div class="project-gallery">
 						<a href="images/fulls/bd4c/boston_clusters.jpg" class="image fit thumb"
 							data-caption="Clusters of restaurants inspected in Boston in 2023">
-							<img src="images/thumbs/project03.jpg" alt="" />
+							<img src="images/thumbs/bd4c.jpg" alt="" />
 						</a>
 						<a href="images/fulls/bd4c/boston_gr_table.jpg" class="image fit thumb" style="display:none"
 							data-caption="Growth rate in clusters of restaurants per neighborhood per year"></a>
 						<a href="images/fulls/bd4c/boston_gr_map.jpg" class="image fit thumb" style="display:none"
 							data-caption="Growth rate in clusters of restaurants per neighborhood during and post pandemic"></a>
-						<a href="images/fulls/bd4c/boston_gr_v_distance.jpg" class="image fit thumb" style="display:none"
+						<a href="images/fulls/bd4c/boston_gr_v_distance.jpg" class="image fit thumb"
+							style="display:none"
 							data-caption="Correlation between the distance to downtown and the resilience during pandemic"></a>
 						<a href="images/fulls/bd4c/cs_clusters.jpg" class="image fit thumb" style="display:none"
 							data-caption="Clusters of restaurants in the Common SENSES area inspected in 2023"></a>
@@ -439,7 +466,7 @@
 					<span class="lx-tag" style="display:none">HTML</span>
 				</article>
 
-
+				<!-- 
 				<div id="extra-projects" style="display:none; width:100%;">
 					<div class="row">
 						<article class="col-4 col-12-xsmall work-item">
@@ -489,13 +516,13 @@
 							<span class="lx-tag" style="display:none">Streamlit</span>
 						</article>
 					</div>
-				</div>
+				</div> -->
 
 
 			</div>
-			<ul class="actions">
+			<!-- <ul class="actions">
 				<li><a href="#" class="expand-btn" id="toggle-projects">Show More</a></li>
-			</ul>
+			</ul> -->
 		</section>
 
 
