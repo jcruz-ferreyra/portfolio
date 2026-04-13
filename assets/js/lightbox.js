@@ -4,7 +4,12 @@ $(document).ready(function () {
 
 	function showImage(i) {
 		$('#lx-img').attr('src', images[i]);
-		$('#lx-caption').text(captions[i] || '');
+		var cap = captions[i] || '';
+		if (cap.indexOf('|') !== -1) {
+			var parts = cap.split('|');
+			cap = '<strong>' + parts[0] + '</strong> ' + parts[1];
+		}
+		$('#lx-caption').html(cap);
 		$('#lx-counter').text((i + 1) + ' / ' + images.length);
 		$('#lx-img').css('cursor', 'zoom-in');
 		$('#lx-img').off('click').on('click', function () {
