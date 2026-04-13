@@ -35,7 +35,12 @@
 			<header class="major">
 				<h2>Turning urban data into actionable insights.</h2>
 			</header>
-			<p>I'm a Fulbright Scholar pursuing an MS in Urban Informatics at Northeastern University, where I also work as a Research Assistant at the Boston Area Research Initiative (BARI). My work sits at the intersection of data, optimization, and urban issues, drawing on a Graduate Specialization in Artificial Intelligence from the University of Buenos Aires and earlier training in architecture at the National University of Rosario. Before moving to Boston, I worked as a Data Scientist at the Rosario Mobility Authority, where I analyzed transit operations data across a network of 500+ buses.</p>
+			<p>I'm a Fulbright Scholar pursuing an MS in Urban Informatics at Northeastern University, where I also work
+				as a Research Assistant at the Boston Area Research Initiative (BARI). My work sits at the intersection
+				of data, optimization, and urban issues, drawing on a Graduate Specialization in Artificial Intelligence
+				from the University of Buenos Aires and earlier training in architecture at the National University of
+				Rosario. Before moving to Boston, I worked as a Data Scientist at the Rosario Mobility Authority, where
+				I analyzed transit operations data across a network of 500+ buses.</p>
 		</section>
 
 
@@ -321,22 +326,31 @@
 					<p>A cloud data pipeline supporting a community-led environmental justice initiative in Roxbury
 						and Dorchester, processing real-time heat, and noise readings from 50+ distributed
 						sensors across the Blue Hill Avenue corridor.</p>
-					<p class="lx-long-desc" style="display:none">Common SENSES is a community-led action research
-						project supporting environmental justice along Blue Hill Avenue, from Dudley Town Common to
-						Franklin Park. Led by the Dudley Street Neighborhood Initiative, Project RIGHT, BARI, and the
-						City of Boston's Office of Emerging Technology, the initiative deploys environmental sensors as
-						community infrastructure, making data openly available for neighborhood advocacy, policy
-						conversations, and co-designed solutions.</p>
-					<p class="lx-long-desc" style="display:none">As a Research Assistant at BARI, I designed and
-						deployed the end-to-end data pipeline supporting this network. The system ingests real-time
-						readings from 50+ sensors through a webhook-based architecture, processes and stores data in
-						Azure Blob Storage, and loads it into a normalized relational database. Researchers access the
-						data directly through the database, while community members can explore live and historical
-						readings through an interactive dashboard embedded in an ArcGIS map showing each sensor's
-						location across the corridor.</p>
-					<p class="lx-long-desc" style="display:none">The result is a system that translates raw
-						environmental data into an accessible public resource, enabling residents to track conditions
-						in their own neighborhood and engage in evidence-based advocacy around heat, and noise.</p>
+					<p class="lx-long-desc" style="display:none"><strong>Context.</strong><br>Common SENSES is a
+						community-led action research project supporting environmental justice along Blue Hill Avenue,
+						from Dudley Town Common to Franklin Park. Led by the Dudley Street Neighborhood Initiative,
+						Project RIGHT, BARI, and the City of Boston's Office of Emerging Technology, the initiative
+						deploys environmental sensors as community infrastructure across the Roxbury and Dorchester
+						neighborhoods, making data openly available for advocacy, policy conversations, and
+						co-designed solutions. Figure 1 shows the geographic distribution of sensors along the
+						corridor.</p>
+					<p class="lx-long-desc" style="display:none"><strong>Data.</strong><br>The pipeline ingests
+						real-time heat and noise readings from 50+ distributed sensors through a webhook-based
+						architecture. Raw data is processed and staged in Azure Blob Storage before being loaded into
+						a normalized relational database, ensuring consistent structure across sensor types and
+						deployment locations. Figure 3 illustrates the overall pipeline architecture from ingestion
+						to storage.</p>
+					<p class="lx-long-desc" style="display:none"><strong>Findings.</strong><br>The deployed system
+						processes sensor readings continuously and makes them accessible through two distinct
+						channels: researchers access the database directly through read permissions, while community
+						members can explore live and historical readings through an interactive dashboard embedded in
+						an ArcGIS map. Figure 2 shows the dashboard interface, which allows anyone to track
+						conditions at any sensor location across the corridor without technical expertise.</p>
+					<p class="lx-long-desc" style="display:none"><strong>Implications.</strong><br>By translating raw
+						environmental data into an accessible public resource, the system enables residents to
+						document conditions in their own neighborhood and engage in evidence-based advocacy around
+						heat and noise. The infrastructure also provides a scalable template for extending
+						community-facing environmental monitoring to other corridors across Boston.</p>
 					<span class="lx-tag" style="display:none">Python</span>
 					<span class="lx-tag" style="display:none">Azure</span>
 					<span class="lx-tag" style="display:none">SQL</span>

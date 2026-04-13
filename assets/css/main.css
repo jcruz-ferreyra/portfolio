@@ -2749,7 +2749,7 @@ input[type="button"]:disabled,
 
 #header h1 {
 	color: rgba(255, 255, 255, 0.5);
-	font-size: 1.35em;
+	font-size: 1.125rem;
 	line-height: 1.75em;
 	margin: 0;
 }
@@ -3266,7 +3266,7 @@ body.is-touch .poptrox-popup .closer {
 	}
 
 	header.major h2 {
-		font-size: 1.35em;
+		font-size: 22px;
 	}
 
 	/* List */

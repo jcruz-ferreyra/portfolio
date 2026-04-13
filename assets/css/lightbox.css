@@ -30,7 +30,7 @@
 .expand-btn:hover {
     color: #494949;
     border: none !important;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
 /* Overlay */
@@ -56,9 +56,9 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 88vw;
-    max-width: 1100px;
-    height: 70vh;
+    width: 92vw;
+    max-width: 1300px;
+    height: 75vh;
     background: #1c1c1c;
     border-radius: 4px;
     overflow: hidden;
@@ -217,12 +217,12 @@
 /* Info content */
 #lx-title {
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1.125rem;
     margin: 0.5em 0 0.8em 0;
 }
 
 #lx-desc {
-    font-size: 0.88em;
+    font-size: 0.94rem;
     line-height: 1.7;
     color: #aaa;
     margin-bottom: 1.2em;
@@ -244,7 +244,7 @@
     display: inline-block;
     background: #2e2e2e;
     color: #aaa;
-    font-size: 0.75em;
+    font-size: 11px;
     padding: 0.2em 0.6em;
     border-radius: 3px;
     margin: 0.2em 0.2em 0 0;
@@ -254,7 +254,7 @@
     display: inline-block;
     margin-right: 0.8em;
     color: #aaa;
-    font-size: 1.1em;
+    font-size: 1.125rem;
     transition: color 0.2s;
 }
 
@@ -295,13 +295,13 @@
 }
 
 .edu-institution {
-    font-size: clamp(14px, 1.05em, 18px);
+    font-size: 1.06rem;
     font-weight: 600;
     color: #333 !important;
 }
 
 .edu-degree {
-    font-size: clamp(13px, 0.9em, 16px);
+    font-size: 0.94rem;
     font-weight: normal;
     color: #666;
 }
@@ -315,12 +315,12 @@
 }
 
 .edu-date {
-    font-size: clamp(11px, 0.8em, 14px);
+    font-size: 0.875rem;
     color: #aaa;
 }
 
 .edu-location {
-    font-size: clamp(12px, 0.85em, 15px);
+    font-size: 0.875rem;
     color: #aaa;
 }
 
@@ -371,7 +371,7 @@
 
 #edu-popup-panel h3 {
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1.125rem;
     margin: 0 0 0.3em 0;
 }
 
@@ -392,13 +392,13 @@
 }
 
 #edu-popup-panel p {
-    font-size: 0.88em;
+    font-size: 0.94rem;
     line-height: 1.7;
     color: #aaa;
 }
 
 #edu-popup-panel ul {
-    font-size: 0.88em;
+    font-size: 0.94rem;
     color: #aaa;
     padding-left: 1.2em;
     line-height: 1.8;
@@ -430,7 +430,7 @@
 
 .edu-popup-links a {
     color: #aaa;
-    font-size: 1.1em;
+    font-size: 1.125rem;
     margin-right: 0.8em;
     transition: color 0.2s;
 }
@@ -446,11 +446,11 @@
 }
 
 #one header.major h2 {
-    font-size: clamp(16px, 1.5em, 28px);
+    font-size: 23px;
 }
 
 #one p {
-    font-size: clamp(13px, 0.95em, 17px);
+    font-size: 1rem;
     line-height: 1.7;
 }
 
@@ -513,7 +513,7 @@
 }
 
 .skills-category {
-    font-size: clamp(12px, 0.82em, 14px);
+    font-size: 0.81rem;
     font-weight: 600;
     color: #888;
     min-width: 160px;
@@ -533,9 +533,25 @@
     display: inline-block;
     background: #f4f4f4;
     color: #555;
-    font-size: clamp(11px, 0.78em, 13px);
+    font-size: 0.81rem;
     padding: 0.2em 0.6em;
     border-radius: 3px;
+}
+
+/* Project section */
+.work-item h3 {
+    font-size: 0.94rem;
+}
+
+.work-item p {
+    font-size: 0.875rem;
+    line-height: 1.7;
+}
+
+/* Contact section */
+#three p, #three .labeled-icons li {
+    font-size: 0.94rem;
+    line-height: 1.7;
 }
 
 @media (max-width: 736px) {
